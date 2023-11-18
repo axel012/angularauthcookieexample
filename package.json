@@ -1,0 +1,18 @@
+{
+  "name": "testse",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "npm start --prefix backend",
+    "frontend": "npm start --prefix frontend",
+    "start": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "backend": "file:backend",
+    "concurrently": "^8.2.2",
+    "frontend": "file:frontend"
+  }
+}
